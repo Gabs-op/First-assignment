@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Michroma';
+    src: url('../fonts/Michroma-Regular.woff2');
+    font-weight: normal;
+    font-style:normal
+}
+
+:root {
+    --primary-color: rgb(31, 18, 31);
+    --secondary-color: rgb(58, 24, 58);
+    --primary-font-color: #fff;
+    --primary-spacing: 16px;
+    --secondary-spacing: 32px;
+    --primary-font: 'Michroma', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/Downlaod-Website-Background.jpg');
+    margin: 0;
+}
+
+.header {
+    background-color: rgba(31, 18, 31, 0.7);
+    color: var(--primary-font-color);
+    margin: 0;
+    padding: var(--primary-spacing);
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    opacity: 1;
+}
+
+.main-menu {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0%;
+    padding: var(--primary-spacing);
+    gap: 12px;
+    background-color: var(--secondary-color);
+    color: var(--primary-font-color);
+    font-family: var(--primary-font);
+}
+
+.menu-item {
+    flex: 1 1 160px;
+    padding: 9px;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    transition: background-color 0.3s linear;
+}
+
+.menu-item:hover {
+    background-color: blueviolet;
+}
+
+.main {
+    margin: var(--primary-spacing) var(--secondary-spacing);
+}
+
+.contact-form {
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: var(--primary-spacing);
+}
+
+fieldset {
+    margin-bottom: var(--primary-spacing);
+}
+
+.text-box {
+    padding: 1 0 3px;
+}
+
+.legend {
+    font-family: var(--primary-font);
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+label {
+    display: block;
+    font-family: var(--primary-font);
+    font-weight: bold;
+
+}
+
+input {
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    margin: 4px 0 5px;
+    width: 100%;
+}
+
+textarea {
+    border-color: var(--primary-color);
+    border-radius: 5px;
+    margin: 4px 0 5px;
+    width: 100%;
+    height: 100px;
+}
+
+.button {
+    background-color: #fff;
+    width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+    .header-title {
+        font-size: 3rem;
+    } 
+    .main-menu {
+        font-size: 1.5rem;
+     }
+}
