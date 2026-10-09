@@ -24,10 +24,11 @@ body {
 }
 
 .header {
-    background-color: rgba(31, 18, 31, 0.7);
+    background-color: rgba(31, 18, 31, 1);
     color: var(--primary-font-color);
     margin: 0;
     padding: var(--primary-spacing);
+    text-align: center;
 }
 
 .header-title {
@@ -35,7 +36,6 @@ body {
     justify-content: center;
     font-size: 2rem;
     font-family: var(--primary-font);
-    opacity: 1;
 }
 
 .main-menu {
@@ -64,7 +64,33 @@ body {
 }
 
 .main {
+    background-color: var(--secondary-color);
     margin: var(--primary-spacing) var(--secondary-spacing);
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--primary-font-color);
+    padding: var(--primary-spacing);
+    border-radius: 10px;
+    font-family: var(--primary-font);
+}
+
+.grid-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.figure {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    display: block;
+    max-inline-size: 50%;
+}
+
+.main-contact {
+    margin: auto;
 }
 
 .contact-form {
@@ -113,6 +139,14 @@ textarea {
 .button {
     background-color: #fff;
     width: 100%;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+    margin-top: 16px;
+    padding: 16px;
+    text-align: center;
 }
 
 @media screen and (min-width: 769px) {
