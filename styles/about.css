@@ -1,0 +1,72 @@
+:root {
+    --primary-color: rgb(31, 18, 31);
+    --secondary-color: rgb(58, 24, 58);
+    --primary-font-color: #fff;
+    --primary-spacing: 16px;
+    --secondary-spacing: 32px;
+    --primary-font: 'Michroma', sans-serif;
+}
+
+.main {
+    margin: var(--primary-spacing);
+    background-color: var(--secondary-color);
+    color: var(--primary-font-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 0%;
+    flex-direction: column;
+    border-radius: 10px;
+    font-family: var(--primary-font);
+}
+
+.main-text {
+    text-align: center;
+}
+
+.container {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.img-pokemon {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.img-resident {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.img-pokemon img,
+.img-resident img {
+    margin: var(--primary-spacing);
+    display: block;
+    width: min(100%, 100px);
+    height: auto;
+}
+
+.img-pokemon ul,
+.img-resident ul {
+    max-width: 180px;
+    gap: var(--primary-spacing);
+}
+
+@media screen and (min-width: 500px) {
+    .img-pokemon ul,
+    .img-resident ul {
+       margin-left: auto;
+    }
+    .img-pokemon img,
+    .img-resident img {
+        width: 200px;
+    }
+}

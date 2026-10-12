@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Michroma';
+    src: url('../fonts/Michroma-Regular.woff2');
+    font-weight: normal;
+    font-style:normal
+}
+
+:root {
+    --primary-color: rgb(31, 18, 31);
+    --secondary-color: rgb(58, 24, 58);
+    --primary-font-color: #fff;
+    --primary-spacing: 16px;
+    --secondary-spacing: 32px;
+    --primary-font: 'Michroma', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/Downlaod-Website-Background.jpg');
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: rgba(31, 18, 31, 1);
+    color: var(--primary-font-color);
+    margin: 0;
+    padding: var(--primary-spacing);
+    text-align: center;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+}
+
+.main-menu {
+    display: flex;
+    align-items: flex-end;
+    margin: 0%;
+    padding: var(--primary-spacing);
+    gap: 12px;
+    background-color: var(--secondary-color);
+    color: var(--primary-font-color);
+    font-size: 10px;
+    font-family: var(--primary-font);
+}
+
+.menu-item {
+    flex: 1 1 160px;
+    padding: 9px;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
+    color: var(--primary-font-color);
+    transition: background-color 0.3s linear;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: rgb(140, 44, 231);
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+    margin-top: 16px;
+    padding: 16px;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    .header-title {
+        font-size: 3rem;
+    }
+}
