@@ -9,12 +9,12 @@
 </head>
 <body>
     <header class="header">
-        <h2 class="header-title">Contact me!</h2>
+        <h1 class="header-title">Contact me!</h1>
     </header>
      <nav class="main-menu">
         <a href="./main-page.html" class="menu-item">Home</a>
         <a href="./about.html" class="menu-item">About</a>
-        <a href="./contact-page.html" class="menu-item">Contact</a>
+        <a href="./contact-page.html" class="menu-item active">Contact</a>
     </nav>
     <main class="main-contact">
       <form class="contact-form" action="mailto: someone@gmail.com" method="post" enctype="text/plain">
@@ -23,21 +23,21 @@
         <div>
             <label for="first-name">First name</label>
             <input type="text" id="first-name" name="first-name"
-            placeholder="enter your first name...">
+            placeholder="enter your first name..." required>
         </div>
         <div>
             <label for="last-name">Last name</label>
-            <input type="text" id="last-name" name="last-name" placeholder="enter your last name...">
+            <input type="text" id="last-name" name="last-name" placeholder="enter your last name..." required>
         </div>
         </fieldset>
         <fieldset class="field">
             <legend class="legend">Message & Email</legend>
             <div>
-             <textarea id="message" name="message" placeholder="Message..."></textarea>
+             <textarea id="message" name="message" placeholder="Message..." required></textarea>
             </div>
             <div>
              <label for="email">Email</label>
-             <input type="text" id="email" placeholder="enter your email...">
+             <input type="text" id="email" placeholder="enter your email..." required>
             </div>
         </fieldset>
         <div class="button-main">

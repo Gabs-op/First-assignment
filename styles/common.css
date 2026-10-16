@@ -48,7 +48,6 @@ body {
     padding: var(--primary-spacing);
     gap: 12px;
     background-color: var(--secondary-color);
-    color: var(--primary-font-color);
     font-size: 10px;
     font-family: var(--primary-font);
 }
@@ -61,6 +60,10 @@ body {
     color: var(--primary-font-color);
     transition: background-color 0.3s linear;
     text-decoration: none;
+}
+
+.active {
+    color: rgb(139, 146, 147);
 }
 
 .menu-item:hover {
